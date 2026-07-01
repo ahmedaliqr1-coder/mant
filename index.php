@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mint Gateway for Electronic Payment Services | UDEA</title>
+    <!-- Include FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -310,39 +311,48 @@
 </head>
 <body>
 
+    <!-- Fixed Header -->
     <header>
         <div class="header-left">
             <button class="menu-toggle" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
             <div class="company-name">Mint Gateway for Electronic Payment Services</div>
         </div>
+        <!-- تم إصلاح الرابط هنا ليوجه بشكل صحيح ومباشر إلى الصفحة العربية -->
         <a href="index.php" class="lang-switch">AR</a>
     </header>
 
+    <!-- Main Content Wrapper -->
     <div class="main-wrapper">
         <div class="container">
             
+            <!-- Hero Section Directly on Background -->
             <div class="hero-section">
                 <h1>Mint Gateway for Secure Payment Solutions in UAE</h1>
                 <p>The unified and secure platform to facilitate online payment transactions and instant balance recharge for traffic and road services.</p>
             </div>
 
+            <!-- Services Buttons Grid -->
             <div class="services-grid">
                 
+                <!-- Salik Services -->
                 <a href="payment.php?service=salek_recharge" class="btn-service">
                     <i class="fa-solid fa-road"></i>
                     <span>Salik Services</span>
                 </a>
 
+                <!-- Traffic Fines Services -->
                 <a href="payment.php?service=traffic_fines" class="btn-service">
                     <i class="fa-solid fa-car-burst"></i>
                     <span>Traffic Fines Payment</span>
                 </a>
 
+                <!-- Request New Nol Card -->
                 <a href="payment.php?service=nol_request" class="btn-service">
                     <i class="fa-solid fa-address-card"></i>
                     <span>Request New Nol Card</span>
                 </a>
 
+                <!-- Nol Card Top-up -->
                 <a href="payment.php?service=nol_recharge" class="btn-service">
                     <i class="fa-solid fa-money-bill-transfer"></i>
                     <span>Nol Card Top-up</span>
@@ -350,10 +360,12 @@
 
             </div>
 
+            <!-- FAQ Section -->
             <div class="faq-section">
                 <h2>Frequently Asked Questions & General Information</h2>
                 <div class="faq-container">
                     
+                    <!-- Q1 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>What is the udea.online platform?</h3>
@@ -364,6 +376,7 @@
                         </div>
                     </div>
 
+                    <!-- Q2 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>How can I top up my Salik account balance?</h3>
@@ -374,6 +387,7 @@
                         </div>
                     </div>
 
+                    <!-- Q3 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>Can I check and pay traffic fines instantly?</h3>
@@ -384,6 +398,7 @@
                         </div>
                     </div>
 
+                    <!-- Q4 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>How long does it take for the Nol card balance to update after recharge?</h3>
@@ -394,6 +409,7 @@
                         </div>
                     </div>
 
+                    <!-- Q5 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>How do I submit a request for a new Nol card?</h3>
@@ -404,6 +420,7 @@
                         </div>
                     </div>
 
+                    <!-- Q6 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>Are there additional fees when paying via Mint Gateway?</h3>
@@ -414,6 +431,7 @@
                         </div>
                     </div>
 
+                    <!-- Q7 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>What are the supported payment methods on this website?</h3>
@@ -424,6 +442,7 @@
                         </div>
                     </div>
 
+                    <!-- Q8 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>Are payment transactions on this website safe and secure?</h3>
@@ -434,6 +453,7 @@
                         </div>
                     </div>
 
+                    <!-- Q9 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>What should I do if I enter an incorrect account number by mistake?</h3>
@@ -444,6 +464,7 @@
                         </div>
                     </div>
 
+                    <!-- Q10 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>Is this website directly affiliated with the RTA?</h3>
@@ -454,6 +475,7 @@
                         </div>
                     </div>
 
+                    <!-- Q11 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>How can I get a payment receipt for my transaction?</h3>
@@ -464,6 +486,7 @@
                         </div>
                     </div>
 
+                    <!-- Q12 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>What is the refund policy in case of a failed transaction?</h3>
@@ -474,6 +497,7 @@
                         </div>
                     </div>
 
+                    <!-- Q13 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>Is the service available for use 24 hours a day?</h3>
@@ -484,6 +508,7 @@
                         </div>
                     </div>
 
+                    <!-- Q14 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>What should I do if I experience an issue during payment?</h3>
@@ -494,6 +519,7 @@
                         </div>
                     </div>
 
+                    <!-- Q15 -->
                     <div class="faq-card">
                         <div class="faq-question">
                             <h3>How can I check the updated terms of use for the website?</h3>
@@ -510,6 +536,7 @@
         </div>
     </div>
 
+    <!-- Black Footer with Matching Links -->
     <footer>
         <div class="footer-company-title">Mint Gateway for Electronic Payment Services</div>
         
@@ -530,6 +557,7 @@
         </div>
     </footer>
 
+    <!-- Interactive JS Accordion Toggle -->
     <script>
         const faqQuestions = document.querySelectorAll('.faq-question');
         
