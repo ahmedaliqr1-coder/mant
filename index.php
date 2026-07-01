@@ -1,14 +1,13 @@
 <?php
 // udea.online - Mint Gateway Project
-// الصفحة الرئيسية المحدثة بالروابط الكاملة والاسم القانوني الموثق
+// English Main Page: Services and FAQs Interface
 ?>
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بوابة مينت لخدمات الدفع الالكتروني | UDEA</title>
-    <!-- تضمين مكتبة الأيقونات الشهيرة -->
+    <title>Mint Gateway for Electronic Payment Services | UDEA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -33,7 +32,7 @@
             line-height: 1.6;
         }
 
-        /* الهيدر الثابت */
+        /* Fixed Header */
         header {
             position: fixed;
             top: 0;
@@ -48,7 +47,7 @@
             z-index: 1000;
         }
 
-        .header-right {
+        .header-left {
             display: flex;
             align-items: center;
             gap: 15px;
@@ -87,7 +86,7 @@
             color: var(--pure-white);
         }
 
-        /* غلاف الصفحة باللون الرمادي */
+        /* Page Wrapper */
         .main-wrapper {
             background-color: var(--site-grey);
             padding-top: 120px;
@@ -101,7 +100,7 @@
             padding: 0 20px;
         }
 
-        /* قسم العناوين والترحيب المباشر على الخلفية بدون مربع */
+        /* Hero Section directly on background */
         .hero-section {
             text-align: center;
             margin-bottom: 40px;
@@ -122,7 +121,7 @@
             margin: 0 auto;
         }
 
-        /* شبكة أزرار الخدمات الأربعة */
+        /* Services Grid (4 Buttons) */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -160,7 +159,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
 
-        /* قسم الأسئلة الشائعة */
+        /* FAQ Section */
         .faq-section {
             background: var(--pure-white);
             padding: 30px 20px;
@@ -182,7 +181,7 @@
             gap: 15px;
         }
 
-        /* كرت السؤال ذو الحواف الحمراء */
+        /* FAQ Card with Red Border */
         .faq-card {
             background-color: var(--pure-white);
             border: 1px solid var(--main-red);
@@ -229,7 +228,7 @@
             line-height: 1.7;
         }
 
-        /* الفوتر باللون الأسود بالكامل */
+        /* Black Footer */
         footer {
             background-color: var(--pure-black);
             color: #ffffff;
@@ -287,7 +286,7 @@
             padding-top: 15px;
         }
 
-        /* التفاعلات التلقائية للأسئلة المفتوحة */
+        /* Accordion Open Toggles */
         .faq-card.active .faq-icon {
             transform: rotate(45deg);
         }
@@ -311,222 +310,197 @@
 </head>
 <body>
 
-    <!-- الهيدر الثابت للموقع -->
     <header>
-        <div class="header-right">
+        <div class="header-left">
             <button class="menu-toggle" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
-            <div class="company-name">بوابة مينت لخدمات الدفع الالكتروني</div>
+            <div class="company-name">Mint Gateway for Electronic Payment Services</div>
         </div>
-        <!-- زر تبديل اللغة يحول مباشرة لصفحة الاندكس الإنجليزية المحددة -->
-        <a href="index_en.php" class="lang-switch">EN</a>
+        <a href="index.php" class="lang-switch">AR</a>
     </header>
 
-    <!-- غلاف الصفحة باللون الرمادي -->
     <div class="main-wrapper">
         <div class="container">
             
-            <!-- قسم العناوين والترحيب المباشر على الخلفية وبدون مربعات -->
             <div class="hero-section">
-                <h1>بوابة مينت لحلول خدمات الدفع الآمن في الإمارات</h1>
-                <p>المنصة الموحدة والآمنة لتسهيل عمليات السداد الإلكتروني وتعبئة الرصيد الفوري للخدمات المرورية والطرقية.</p>
+                <h1>Mint Gateway for Secure Payment Solutions in UAE</h1>
+                <p>The unified and secure platform to facilitate online payment transactions and instant balance recharge for traffic and road services.</p>
             </div>
 
-            <!-- شبكة الأزرار الأربعة للخدمات المطلوبة -->
             <div class="services-grid">
                 
-                <!-- زر خدمة سالك الأول -->
                 <a href="payment.php?service=salek_recharge" class="btn-service">
                     <i class="fa-solid fa-road"></i>
-                    <span>خدمات سالك</span>
+                    <span>Salik Services</span>
                 </a>
 
-                <!-- زر خدمة مخالفات المرور الثاني -->
                 <a href="payment.php?service=traffic_fines" class="btn-service">
                     <i class="fa-solid fa-car-burst"></i>
-                    <span>خدمات دفع مخالفات المرور</span>
+                    <span>Traffic Fines Payment</span>
                 </a>
 
-                <!-- زر خدمة طلب بطاقة نول الثالث -->
                 <a href="payment.php?service=nol_request" class="btn-service">
                     <i class="fa-solid fa-address-card"></i>
-                    <span>طلب بطاقة نول جديدة</span>
+                    <span>Request New Nol Card</span>
                 </a>
 
-                <!-- زر خدمة إعادة تعبئة بطاقة نول الرابع -->
                 <a href="payment.php?service=nol_recharge" class="btn-service">
                     <i class="fa-solid fa-money-bill-transfer"></i>
-                    <span>إعادة تعبئة بطاقة نول</span>
+                    <span>Nol Card Top-up</span>
                 </a>
 
             </div>
 
-            <!-- قسم 15 سؤالاً شائعاً بكروت ذات حواف حمراء وعلامة زائد تفاعلية حمراء -->
             <div class="faq-section">
-                <h2>الأسئلة الشائعة والمعلومات العامة</h2>
+                <h2>Frequently Asked Questions & General Information</h2>
                 <div class="faq-container">
                     
-                    <!-- س١ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>ما هي منصة udea.online؟</h3>
+                            <h3>What is the udea.online platform?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>هي بوابة إلكترونية مستقلة تقدم تسهيلات رقمية لدفع الفواتير وإعادة شحن البطاقات المرورية عبر الإنترنت بشكل مبسط وآمن تماماً للمستخدمين.</p>
+                            <p>It is an independent electronic portal that offers digital facilities for bill payments and recharging road transit cards online in a fully simplified and secure manner for users.</p>
                         </div>
                     </div>
 
-                    <!-- س٢ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>كيف يمكنني إعادة تعبئة رصيد حساب سالك الخاص بي؟</h3>
+                            <h3>How can I top up my Salik account balance?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>ببساطة اضغط على زر "خدمات سالك"، أدخل رقم الحساب أو رقم البطاقة المراد شحنها، ثم حدد المبلغ المطلوب وأتمم الدفع عبر بوابتنا المشفرة.</p>
+                            <p>Simply click on the "Salik Services" button, enter the account or card number you want to recharge, select the required amount, and complete the payment through our encrypted gateway.</p>
                         </div>
                     </div>
 
-                    <!-- س٣ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>هل يمكنني الاستعلام عن المخالفات المرورية وسدادها فوراً؟</h3>
+                            <h3>Can I check and pay traffic fines instantly?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>نعم، تتيح المنصة إمكانية إدخال بيانات المركبة واستعراض المبالغ المستحقة ودفع المخالفات مباشرة لتحديث السجلات في أسرع وقت.</p>
+                            <p>Yes, the platform allows you to enter vehicle details, view outstanding amounts, and pay fines directly to update records as quickly as possible.</p>
                         </div>
                     </div>
 
-                    <!-- س٤ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>ما هي تحديداً المدة المستغرقة لتحديث رصيد بطاقة نول بعد الشحن؟</h3>
+                            <h3>How long does it take for the Nol card balance to update after recharge?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>يتم إرسال طلب الشحن فوراً وتجهيز الرصيد، وقد يتطلب الأمر في بعض الأحيان تفعيل الرصيد على البطاقة عبر ملامسة أجهزة القراءة في محطات المترو أو الحافلات.</p>
+                            <p>The recharge request is sent instantly. However, activating the balance on the physical card may sometimes require tapping it on card readers at metro or bus stations.</p>
                         </div>
                     </div>
 
-                    <!-- س٥ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>كيف يتم تقديم طلب للحصول على بطاقة نول جديدة؟</h3>
+                            <h3>How do I submit a request for a new Nol card?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>يمكنك التوجه لقسم "طلب بطاقة نول جديدة" وملء البيانات والعنوان ليتم معالجة وإصدار وتوصيل البطاقة إليك بالتنسيق مع الجهات المعنية.</p>
+                            <p>You can go to the "Request New Nol Card" section, fill in your details and address, and the card will be processed, issued, and delivered to you in coordination with the relevant parties.</p>
                         </div>
                     </div>
 
-                    <!-- س٦ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>هل هناك رسوم إضافية عند الدفع عبر بوابة مينت لخدمات الدفع الالكتروني؟</h3>
+                            <h3>Are there additional fees when paying via Mint Gateway?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>قد يتم تطبيق رسوم خدمة إدارية بسيطة مقابل تسهيل وإجراء المعاملات الإلكترونية الفورية، ويتم توضيح كافة المبالغ بوضوح قبل تأكيد السداد.</p>
+                            <p>A small administrative service fee may apply for facilitating instant online transactions. All amounts are clearly displayed before confirming the payment.</p>
                         </div>
                     </div>
 
-                    <!-- س٧ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>ما هي وسائل الدفع المدعومة في الموقع؟</h3>
+                            <h3>What are the supported payment methods on this website?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>نحن ندعم معظم بطاقات الائتمان والخصم المباشر العالمية والمحلية الرئيسية (فيزا وماستركارد) لضمان تجربة سداد مرنة.</p>
+                            <p>We support most major local and international credit and debit cards (Visa and MasterCard) to ensure a flexible payment experience.</p>
                         </div>
                     </div>
 
-                    <!-- س٨ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>هل عمليات الدفع على هذا الموقع آمنة ومحمية؟</h3>
+                            <h3>Are payment transactions on this website safe and secure?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>نعم بالكامل، يتم تشفير كافة البيانات المالية عبر بروتوكولات حماية متطورة تضمن عدم مشاركة أو تسريب أي معلومات حساسة.</p>
+                            <p>Yes, completely. All financial data is encrypted using advanced security protocols that guarantee no sensitive information is shared or leaked.</p>
                         </div>
                     </div>
 
-                    <!-- س٩ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>ماذا أفعل إذا أدخلت رقم حساب خاطئ بالخطأ؟</h3>
+                            <h3>What should I do if I enter an incorrect account number by mistake?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>يجب التواصل مع الدعم الفني فوراً قبل اكتمال المعالجة النظامية، حيث يصعب استرداد المبالغ بعد تحويلها الفعلي للجهات الخدمية.</p>
+                            <p>Please contact technical support immediately before system processing completes. It is highly difficult to reverse or refund amounts once they are dispatched to utility authorities.</p>
                         </div>
                     </div>
 
-                    <!-- س١٠ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>هل الموقع يتبع بشكل مباشر لهيئة الطرق والمواصلات؟</h3>
+                            <h3>Is this website directly affiliated with the RTA?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>لا، هذا الموقع هو منصة سداد وتسهيل مستقلة مملوكة لشركة بوابة مينت لخدمات الدفع الالكتروني، وليست الموقع الرسمي لأي جهة حكومية.</p>
+                            <p>No, this website is an independent payment and facilitation platform owned by Mint Gateway for Electronic Payment Services, and is not the official website of any government entity.</p>
                         </div>
                     </div>
 
-                    <!-- س١١ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>كيف يمكنني الحصول على إيصال سداد لمعاملتي؟</h3>
+                            <h3>How can I get a payment receipt for my transaction?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>فور إتمام العملية بنجاح، يظهر لك إيصال رقمي على الشاشة يتضمن كافة تفاصيل المعاملة ويمكنك حفظه أو طباعته كإثبات سداد.</p>
+                            <p>Upon successful completion of the process, a digital receipt will appear on the screen containing all transaction details. You can save or print it as proof of payment.</p>
                         </div>
                     </div>
 
-                    <!-- س١٢ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>ما هي سياسة الاسترداد في حال فشل المعاملة؟</h3>
+                            <h3>What is the refund policy in case of a failed transaction?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>في حال تم خصم المبلغ ولم يتم شحن الخدمة بسبب عطل تقني، يتم إعادة الأموال تلقائياً إلى بطاقة الدفع الأصلية خلال المدة المحددة بالسياسة.</p>
+                            <p>If an amount is deducted but the service is not recharged due to a technical error, funds are automatically reversed to the original card within the timeframe specified in our policy.</p>
                         </div>
                     </div>
 
-                    <!-- س١٣ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>هل الخدمة متاحة للاستخدام على مدار 24 ساعة؟</h3>
+                            <h3>Is the service available for use 24 hours a day?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>نعم، البوابة تعمل بشكل مؤتمت على مدار الساعة طوال أيام الأسبوع لتلبية احتياجاتكم وتسهيل معاملاتكم في أي وقت ومن أي مكان.</p>
+                            <p>Yes, the portal operates automatically 24 hours a day, 7 days a week, to meet your needs and facilitate your transactions at any time and from anywhere.</p>
                         </div>
                     </div>
 
-                    <!-- س١٤ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>ماذا أفعل لو واجهتني مشكلة أثناء السداد؟</h3>
+                            <h3>What should I do if I experience an issue during payment?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>يرجى إرسال تفاصيل المشكلة عبر صفحة اتصل بنا أو التواصل الفوري مع فريق خدمة العملاء المتواجد لمساعدتكم وحل المشكلة فوراً.</p>
+                            <p>Please send the issue details via the Contact Us page or immediately communicate with our active customer support team to resolve the issue right away.</p>
                         </div>
                     </div>
 
-                    <!-- س١٥ -->
                     <div class="faq-card">
                         <div class="faq-question">
-                            <h3>كيف يمكنني التحقق من شروط الاستخدام المحدثة للموقع؟</h3>
+                            <h3>How can I check the updated terms of use for the website?</h3>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>يمكنك في أي وقت مراجعة صفحة "الشروط والأحكام" الموجودة في أسفل الموقع للاطلاع على كافة الضوابط واللوائح المحدثة والمعمول بها.</p>
+                            <p>You can review the "Terms and Conditions" page linked at the bottom of the website at any time to stay updated on all applicable regulations and terms.</p>
                         </div>
                     </div>
 
@@ -536,28 +510,26 @@
         </div>
     </div>
 
-    <!-- الفوتر الرسمي باللون الأسود والروابط المحددة بملفاتها المباشرة والربط القانوني الصارم -->
     <footer>
-        <div class="footer-company-title">بوابة مينت لخدمات الدفع الالكتروني</div>
+        <div class="footer-company-title">Mint Gateway for Electronic Payment Services</div>
         
         <div class="footer-links">
-            <a href="privacy-policy.php">سياسة الخصوصية</a>
-            <a href="terms.php">الشروط والأحكام</a>
-            <a href="refund-policy.php">سياسة الاسترداد</a>
-            <a href="disclaimer.php">إخلاء المسؤولية</a>
+            <a href="privacy-policy.php">Privacy Policy</a>
+            <a href="terms.php">Terms & Conditions</a>
+            <a href="refund-policy.php">Refund Policy</a>
+            <a href="disclaimer.php">Disclaimer</a>
         </div>
 
         <div class="footer-disclaimer">
-            <strong>معلومات الملكية والتشغيل القانوني:</strong> 
-            إن اسم النطاق والدومين الحالي <strong>udea.online</strong> هو منصة رقمية رسمية مملوكة بالكامل وبشكل قانوني لـ <strong>بوابة مينت لخدمات الدفع الالكتروني ذ.م.م - فرع دبي</strong>. ويتم تشغيل وإدارة هذا الموقع الإلكتروني بالكامل من قِبل شركة بوابة مينت لخدمات الدفع الالكتروني بصفتها المالك والمسؤول القانوني المباشر عن كافة العمليات والخدمات والحلول التقنية القدمة عبر البوابة. هذا الموقع يمثل منصة وسيطة تجارية مستقلة تسهل وتدعم حلول السداد والدفع، وليس الموقع الحكومي الرسمي للهيئات المعنية.
+            <strong>Ownership and Legal Operation Information:</strong> 
+            The current domain name <strong>udea.online</strong> is an official digital platform fully and legally owned by <strong>Mint Gateway for Electronic Payment Services LLC - Dubai Branch</strong>. This website is entirely operated and managed by Mint Gateway for Electronic Payment Services as the direct legal owner responsible for all operations, services, and technical solutions provided through this portal. This website represents an independent commercial intermediary platform that facilitates and supports payment solutions, and is not the official government website of the respective authorities.
         </div>
 
         <div class="footer-copy">
-            &copy; 2026 udea.online. جميع الحقوق محفوظة لشركة بوابة مينت لخدمات الدفع الالكتروني.
+            &copy; 2026 udea.online. All rights reserved for Mint Gateway for Electronic Payment Services.
         </div>
     </footer>
 
-    <!-- الجزء البرمجي الخاص بتفاعل فتح وإغلاق كروت الأسئلة الشائعة -->
     <script>
         const faqQuestions = document.querySelectorAll('.faq-question');
         
@@ -566,7 +538,7 @@
                 const card = question.parentElement;
                 const answer = card.querySelector('.faq-answer');
                 
-                // إغلاق أي كرت آخر مفتوح حالياً لتنظيم العرض
+                // Close other open cards for cleaner layout
                 document.querySelectorAll('.faq-card').forEach(item => {
                     if (item !== card && item.classList.contains('active')) {
                         item.classList.remove('active');
@@ -574,7 +546,7 @@
                     }
                 });
                 
-                // التبديل للكرت المختار
+                // Toggle current card
                 card.classList.toggle('active');
                 if (card.classList.contains('active')) {
                     answer.style.maxHeight = answer.scrollHeight + "px";
@@ -584,9 +556,9 @@
             });
         });
 
-        // زر القائمة في الهيدر
+        // Header Menu Button Alert
         document.getElementById('menuBtn').addEventListener('click', function() {
-            alert('تم النقر على القائمة الرئيسية للبوابة');
+            alert('Main menu toggled');
         });
     </script>
 </body>
